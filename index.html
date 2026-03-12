@@ -1,26 +1,120 @@
-// 你的首页核心逻辑
-const Portfolio = () => (
-  <div style={{ padding: '40px', fontFamily: 'sans-serif' }}>
-    <header>
-      <h1>Dengzhiliang (@linkytel)</h1>
-      <p>Full-stack Developer | AI Agent Architect</p>
-    </header>
-    
-    <section>
-      <h2>🚀 Projects</h2>
-      <ul>
-        <li><strong>AI Agent Framework:</strong> Building autonomous agents for e-commerce.</li>
-        <li><strong>Custom Todo System:</strong> A specialized tool for developer productivity.</li>
-      </ul>
-    </section>
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dengzhiliang | Developer Portfolio</title>
+    <style>
+      :root {
+        --primary: #2563eb;
+        --text: #1f2937;
+        --bg: #f8fafc;
+      }
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        margin: 0;
+        padding: 20px;
+      }
+      .container {
+        max-width: 700px;
+        margin: 50px auto;
+        background: white;
+        padding: 40px;
+        border-radius: 16px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        color: #111827;
+      }
+      .subtitle {
+        font-size: 1.2rem;
+        color: var(--primary);
+        font-weight: 600;
+        margin-bottom: 30px;
+      }
+      h2 {
+        border-bottom: 2px solid #f1f5f9;
+        padding-bottom: 10px;
+        margin-top: 30px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      .card {
+        border: 1px solid #e2e8f0;
+        padding: 15px;
+        border-radius: 8px;
+      }
+      .card strong {
+        display: block;
+        color: var(--primary);
+      }
+      .footer {
+        margin-top: 50px;
+        font-size: 0.9rem;
+        color: #94a3b8;
+        text-align: center;
+      }
+      a {
+        color: var(--primary);
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Dengzhiliang</h1>
+        <div class="subtitle">Full-stack Developer & AI Agent Enthusiast</div>
+      </header>
 
-    <section>
-      <h2>🛠 Skills</h2>
-      <p>JavaScript, TypeScript, Node.js, Python, Alibaba Cloud, AI Prompt Engineering</p>
-    </section>
+      <section>
+        <h2>🚀 Projects</h2>
+        <div class="card">
+          <strong>AI Agent Framework</strong>
+          <p>
+            Developing autonomous agents for cross-border e-commerce automation.
+          </p>
+        </div>
+        <div class="card" style="margin-top: 15px">
+          <strong>Developer Productivity Tools</strong>
+          <p>Custom-built task management systems and workflow optimizers.</p>
+        </div>
+      </section>
 
-    <footer>
-      <p>This site is hosted on Vercel and registered via is-a.dev.</p>
-    </footer>
-  </div>
-);
+      <section>
+        <h2>🛠 Tech Stack</h2>
+        <div class="grid">
+          <div class="card">
+            <strong>Languages</strong>TypeScript, Node.js, Python
+          </div>
+          <div class="card"><strong>Cloud</strong>Vercel, Alibaba Cloud</div>
+        </div>
+      </section>
+
+      <section>
+        <h2>📫 Contact</h2>
+        <p>
+          GitHub: <a href="https://github.com/linkytel">@linkytel</a><br />
+          Email: 409522320@qq.com
+        </p>
+      </section>
+
+      <div class="footer">Built with ❤️ for the is-a.dev community</div>
+    </div>
+  </body>
+</html>
